@@ -28,7 +28,7 @@ window.onload = function() {
         submitMessage(newMessage);
 
         // empty out the input fields
-        $("#body").val("");
+        $("#message").val("");
         $("#name").val("");
         $("#email").val("");
         $("#phone").val("");
