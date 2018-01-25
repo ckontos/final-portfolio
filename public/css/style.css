@@ -1,0 +1,67 @@
+#myImage {
+    margin-top: 120px;
+    margin-left: 120px;
+    height: 350px;
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#myImage {
+    box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.4), 0 20px 30px 0 rgba(0, 0, 0, 0.19);
+}
+
+#greeting {
+    margin-top: 120px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#aboutMeDiv {
+    margin-bottom: 150px;
+}
+
+.aboutMe {
+    font-size: 18px;
+}
+
+#myWorkDiv {
+    padding-top: 10px;
+    padding-bottom: 80px;
+    background: #64b5f6;
+    box-shadow: 0 22px 22px -22px rgba(0, 0, 0, 0.8) inset,
+    0 -22px 22px -22px rgba(0, 0, 0, 0.8) inset;
+
+}
+
+.divTitle {
+    text-align: center;
+    padding-bottom: 15px;
+    font-weight: bold;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#contactMe {
+    padding-top: 20px;
+}
+
+#contactMe {
+    padding-bottom: 50px;
+}
+
+#backToTop {
+    color: black !important;
+}
+
+#name:focus,
+#email:focus,
+#phone:focus,
+#textarea1:focus {
+    border-bottom: 1px solid #64b5f6;
+    -webkit-box-shadow: 0 1px 0 0 #64b5f6;
+    -moz-box-shadow: 0 1px 0 0 #64b5f6;
+    box-shadow: 0 1px 0 0 #64b5f6;
+}
+
+.active {
+    color: #64b5f6!important;
+}

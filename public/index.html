@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Dimitri Kontos Portfolio
+    </title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:900" rel="stylesheet">
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <nav>
+            <div class="nav-wrapper blue lighten-2">
+                <a href="#" class="brand-logo">Logo</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="#aboutMeDiv">About Me</a></li>
+                    <li><a href="#myWorkDiv">My Work</a></li>
+                    <li><a href="#contactMe">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-------------------------about me div---------------------------------->
+        <div class="row" id="aboutMeDiv">
+            <div class="col s5">
+                <img id="myImage" src="images/Face.png">
+            </div>
+            <div class="col s6">
+                <h1 id="greeting">Hey! Meet Dimitri.</h1>
+                <p class="aboutMe">Dimitri Kontos is a Full Stack Web Developer with a true passion for front end web development. He graduated from the University of North Carolina at Charlotte with a degree in Exercise Science. His post-graduate work was concetrated in
+                    the Clinical Realm working with Cardic patients. </p>
+
+                <p class="aboutMe">Dimitri decided to pursue web development after a year of coding being a self-taught hobby, and working in a start-up company where he helped engineer an interactive web platform. He brings a fresh, dynamic, and creative mind to the field
+                    of web development. One line of code at a time, Dimitri intends on executing his passion of making a true difference with his work. </p>
+                </p>
+            </div>
+        </div>
+        <!--------------------Apps div---------------------------------->
+        <div class="row" id="myWorkDiv">
+            <h2 class="divTitle">My Apps</h2>
+            <div class="col s3">
+                <div class="row">
+                    <div class="col s12 m12">
+                        <div class="card hoverable">
+                            <div class="card-image">
+                                <img src="images/fridge2plate.png">
+
+                            </div>
+                            <div class="card-content">
+                                <p>App designed to take ingredients you have at the house and return recipe ideas and how-to videos! </p>
+                            </div>
+                            <div class="card-action">
+                                <a href="https://ckontos.github.io/FridgeIngredientToMeal-groupProject1/">Fridge 2 Plate App</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s3">
+                <div class="row">
+                    <div class="col s12 m12">
+                        <div class="card hoverable">
+                            <div class="card-image">
+                                <img src="images/trainscheduler.png">
+
+                            </div>
+                            <div class="card-content">
+                                <p>App that allows you to add a train with various information and add it to the train schedule!</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="https://ckontos.github.io/TrainScheduler/">Train Scheduler App</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s3">
+                <div class="row">
+                    <div class="col s12 m12">
+                        <div class="card hoverable">
+                            <div class="card-image">
+                                <img src="images/clickygame.png">
+
+                            </div>
+                            <div class="card-content">
+                                <p>You are given 12 different images (cards). Click each card without clicking the same card twice!</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="https://ckontos.github.io/clickygame/">Clicky Game</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s3">
+                <div class="row">
+                    <div class="col s12 m12">
+                        <div class="card hoverable">
+                            <div class="card-image">
+                                <img src="images/crystalcollector.png">
+
+                            </div>
+                            <div class="card-content">
+                                <p>Click the crystals, that each have a unique value, to add up your score to the given number without going over!</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="https://ckontos.github.io/crystalcollectorgame/">Crystal Collector Game</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!----------------------------Apps div------------------------------->
+        <div class="row" id="contactMe">
+            <h2 class="divTitle">Contact Me</h2>
+
+            <div class="container col s2"></div>
+            <div class="container col s8 center-align">
+                <div class="card grey lighten-3" id="userLogin">
+                    <div class="card-content black-text">
+                        <div class="row">
+                            <form class="col s12" action="/send" method="get">
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="name" type="text" class="validate">
+                                        <label for="name">Name</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="email" type="email" class="validate">
+                                        <label for="email">E-mail</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input type="text" id="phone" class="autocomplete">
+                                        <label for="phone">Telephone Number</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <textarea id="message" class="materialize-textarea"></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field">
+                                        <a class="waves-effect waves-light grey darken-2 btn modal-trigger" href="#modal1" style="margin-left: 10px; margin-top: 15px;" type="submit" id="submitButton">Send</a>
+                                    </div>
+                                </div>
+
+                                <!-- Modal -->
+
+                                <div id="modal1" class="modal">
+                                    <div class="modal-content">
+                                        <h4>Thank You For Your Message!</h4>
+                                        <p>I'll get back with you as soon as possible!</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Okay</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container col s2"></div>
+        </div>
+        </div>
+    </main>
+
+    <!------------------------Footer--------------------------->
+    <footer class="page-footer blue lighten-2">
+        <div class="footer-copyright">
+            <div class="container black-text">
+                Dimitri Kontos © 2018
+                <a class="grey-text text-lighten-4 right" id="backToTop" href="#!">Back to the top</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script type="text/javascript" src="js/initializations.js"></script>
+<script type="text/javascript" src="js/message.js"></script>
+
+</html>
