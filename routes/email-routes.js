@@ -1,6 +1,6 @@
 const nodemailer = require('nodemailer');
 
-var smtpTransport = nodemailer.createTransport({
+var Transport = nodemailer.createTransport({
     service: "gmail",
     host: process.env.EMAIL,
     auth: {
@@ -21,7 +21,7 @@ module.exports = function(app, flag) {
             html: req.query.html
         };
         console.log(mailOptions);
-        smtpTransport.sendMail(mailOptions, function(error, response) {
+        Transport.sendMail(mailOptions, function(error, response) {
             if (error) {
                 console.log(error);
                 res.end("error");
