@@ -2,7 +2,7 @@ const nodemailer = require('nodemailer');
 
 var smtpTransport = nodemailer.createTransport({
     service: "gmail",
-    host: "ckontoswebpage@gmail.com",
+    host: process.env.EMAIL,
     auth: {
         user: process.env.EMAIL,
         pass: process.env.PASSWORD
