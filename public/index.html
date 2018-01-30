@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playball|Titillium+Web:600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 
 <body>
@@ -23,7 +26,8 @@
     <main>
         <nav>
             <div class="nav-wrapper blue lighten-2">
-                <a href="#" class="brand-logo">CDK</a>
+                <a href="#" class="brand-logo">Dimitri Kontos Portfolio</a>
+                <a href="#" data-activates="slide-out" class="button-collapse show-on-med-and-down"><i class="material-icons">menu</i></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="#aboutMeDiv">About Me</a></li>
                     <li><a href="#myWorkDiv">My Work</a></li>
@@ -32,25 +36,32 @@
             </div>
         </nav>
 
+        <ul id="slide-out" class="side-nav hide-on-large blue lighten-2">
+            <li><a href="#aboutMeDiv">About Me</a></li>
+            <li><a href="#myWorkDiv">My Work</a></li>
+            <li><a href="#contactMe">Contact Me</a></li>
+        </ul>
         <!-------------------------about me div---------------------------------->
         <div class="row" id="aboutMeDiv">
-            <div class="col s5">
+            <div class="col s12 m12 l5">
                 <img id="myImage" src="images/Face.png">
             </div>
-            <div class="col s6">
-                <h1 id="greeting">Hey! Meet Dimitri.</h1>
-                <p class="aboutMe">Dimitri Kontos is a Full Stack Web Developer with a true passion for front end web development. He graduated from the University of North Carolina at Charlotte with a degree in Exercise Science. His post-graduate work was concetrated in
-                    the Clinical Realm working with Cardic patients. </p>
+            <div class="col s12 m12 l6" id="aboutMeText">
+                <h1 id="greeting" class="divTitle">Hey! Meet Dimitri.</h1>
+                <p class="aboutMe">Dimitri Kontos is a Full Stack Web Developer with a true passion for front end web development. He graduated from the University of North Carolina at Charlotte with a degree in Exercise Science, and also with a Full-Stack Web Development
+                    graduate certificate. </p>
 
-                <p class="aboutMe">Dimitri decided to pursue web development after a year of coding being a self-taught hobby, and working in a start-up company where he helped engineer an interactive web platform. He brings a fresh, dynamic, and creative mind to the field
-                    of web development. One line of code at a time, Dimitri intends on executing his passion of making a true difference with his work. </p>
+                <p class="aboutMe">Dimitri specializes in creating the most functional, vibrant, and interactive front-end interfaces for his clients. Dimitri looked into Web Development to cure his need for creative freedom. He found that putting his ideas and creativity
+                    into building web sites was something that could help him reach the creative potential he felt he could express through his work. </p>
+                <p class="aboutMe"> His experiences have molded him into an individual that takes great pride in his work and the experience he gives his clients. He brings a fresh, dynamic, and creative mind to the field of web development. One line of code at a time, Dimitri
+                    intends on using his drive, discipline, and dedication to make a difference with his work. </p>
                 </p>
             </div>
         </div>
         <!--------------------Apps div---------------------------------->
         <div class="row" id="myWorkDiv">
             <h2 class="divTitle">My Apps</h2>
-            <div class="col s3">
+            <div class="col l3">
                 <div class="row">
                     <div class="col s12 m12">
                         <div class="card hoverable">
@@ -68,7 +79,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col s3">
+            <div class="col l3">
                 <div class="row">
                     <div class="col s12 m12">
                         <div class="card hoverable">
@@ -86,7 +97,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col s3">
+            <div class="col l3">
                 <div class="row">
                     <div class="col s12 m12">
                         <div class="card hoverable">
@@ -104,7 +115,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col s3">
+            <div class="col l3">
                 <div class="row">
                     <div class="col s12 m12">
                         <div class="card hoverable">

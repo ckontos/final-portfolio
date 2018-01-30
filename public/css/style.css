@@ -7,13 +7,9 @@
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#myImage {
-    box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.4), 0 20px 30px 0 rgba(0, 0, 0, 0.19);
-}
 
 #greeting {
     margin-top: 120px;
-    font-family: 'Titillium Web', sans-serif;
 }
 
 #aboutMeDiv {
@@ -68,4 +64,26 @@
 
 .brand-logo {
     margin-left: 10px;
+    font-family: 'Playball', cursive;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+@media screen and (max-width: 1092px) {
+
+    #myImage {
+        margin-left: 80px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    #myImage {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #aboutMeText {
+        text-align: center;
+    }
 }
