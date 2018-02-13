@@ -26,11 +26,12 @@
     <main>
         <nav>
             <div class="nav-wrapper blue lighten-2">
-                <a href="#" class="brand-logo">Dimitri Kontos Portfolio</a>
+                <a href="#" class="brand-logo">CDK Portfolio</a>
                 <a href="#" data-activates="slide-out" class="button-collapse show-on-med-and-down"><i class="material-icons">menu</i></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="#aboutMeDiv">About Me</a></li>
-                    <li><a href="#myWorkDiv">My Work</a></li>
+                    <li><a href="#myApps">My Work</a></li>
+                    <li><a href="#connectWithMe">Connect</a></li>
                     <li><a href="#contactMe">Contact Me</a></li>
                 </ul>
             </div>
@@ -39,12 +40,13 @@
         <ul id="slide-out" class="side-nav hide-on-large blue lighten-2">
             <li><a href="#aboutMeDiv">About Me</a></li>
             <li><a href="#myWorkDiv">My Work</a></li>
+            <li><a href="#connectWithMe">Connect</a></li>
             <li><a href="#contactMe">Contact Me</a></li>
         </ul>
         <!-------------------------about me div---------------------------------->
         <div class="row" id="aboutMeDiv">
             <div class="col s12 m12 l5">
-                <img id="myImage" src="images/Face.png">
+                <img id="myImage" src="images/headshot1.jpg">
             </div>
             <div class="col s12 m12 l6" id="aboutMeText">
                 <h1 id="greeting" class="divTitle">Hey! Meet Dimitri.</h1>
@@ -59,83 +61,134 @@
             </div>
         </div>
         <!--------------------Apps div---------------------------------->
-        <div class="row" id="myWorkDiv">
-            <h2 class="divTitle">My Apps</h2>
-            <div class="col l3">
-                <div class="row">
-                    <div class="col s12 m12">
-                        <div class="card hoverable">
-                            <div class="card-image">
-                                <img src="images/fridge2plate.png">
+        <div class="row myWorkDiv">
+            <div class="row" id="myApps">
+                <h2 class="divTitle">My Apps</h2>
+                <div class="col l3">
+                    <div class="row">
+                        <div class="col s12 m12">
+                            <div class="card hoverable">
+                                <div class="card-image">
+                                    <img src="images/fridge2plate.png">
 
+                                </div>
+                                <div class="card-content">
+                                    <p>App designed to take ingredients you have at the house and return recipe ideas and how-to videos! </p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="https://ckontos.github.io/FridgeIngredientToMeal-groupProject1/">Fridge 2 Plate App</a>
+                                </div>
                             </div>
-                            <div class="card-content">
-                                <p>App designed to take ingredients you have at the house and return recipe ideas and how-to videos! </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l3">
+                    <div class="row">
+                        <div class="col s12 m12">
+                            <div class="card hoverable">
+                                <div class="card-image">
+                                    <img src="images/trainscheduler.png">
+
+                                </div>
+                                <div class="card-content">
+                                    <p>App that allows you to add a train with various information and add it to the train schedule!</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="https://ckontos.github.io/TrainScheduler/">Train Scheduler App</a>
+                                </div>
                             </div>
-                            <div class="card-action">
-                                <a href="https://ckontos.github.io/FridgeIngredientToMeal-groupProject1/">Fridge 2 Plate App</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l3">
+                    <div class="row">
+                        <div class="col s12 m12">
+                            <div class="card hoverable">
+                                <div class="card-image">
+                                    <img src="images/clickygame.png">
+
+                                </div>
+                                <div class="card-content">
+                                    <p>You are given 12 different images (cards). Click each card without clicking the same card twice!</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="https://ckontos.github.io/clickygame/">Clicky Game</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l3">
+                    <div class="row">
+                        <div class="col s12 m12">
+                            <div class="card hoverable">
+                                <div class="card-image">
+                                    <img src="images/crystalcollector.png">
+
+                                </div>
+                                <div class="card-content">
+                                    <p>Click the crystals, that each have a unique value, to add up your score to the given number without going over!</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="https://ckontos.github.io/crystalcollectorgame/">Crystal Collector Game</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col l3">
-                <div class="row">
-                    <div class="col s12 m12">
-                        <div class="card hoverable">
-                            <div class="card-image">
-                                <img src="images/trainscheduler.png">
+            <!--2nd row of apps div-->
+            <div class="row">
+                <div class="col l3">
+                    <div class="row">
+                        <div class="col s12 m12">
+                            <div class="card hoverable">
+                                <div class="card-image">
+                                    <img src="images/jamclash.png">
 
-                            </div>
-                            <div class="card-content">
-                                <p>App that allows you to add a train with various information and add it to the train schedule!</p>
-                            </div>
-                            <div class="card-action">
-                                <a href="https://ckontos.github.io/TrainScheduler/">Train Scheduler App</a>
+                                </div>
+                                <div class="card-content">
+                                    <p>Social networking app for musicians and artists who are looking to find others to make a band or individuals to jam-out!. </p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="https://jam-clash.herokuapp.com/">Jam-Clash</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col l3">
-                <div class="row">
-                    <div class="col s12 m12">
-                        <div class="card hoverable">
-                            <div class="card-image">
-                                <img src="images/clickygame.png">
+                <div class="col l3">
+                    <div class="row">
+                        <div class="col s12 m12">
+                            <div class="card hoverable">
+                                <div class="card-image">
+                                    <img src="images/mongoscrape.png">
 
-                            </div>
-                            <div class="card-content">
-                                <p>You are given 12 different images (cards). Click each card without clicking the same card twice!</p>
-                            </div>
-                            <div class="card-action">
-                                <a href="https://ckontos.github.io/clickygame/">Clicky Game</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col l3">
-                <div class="row">
-                    <div class="col s12 m12">
-                        <div class="card hoverable">
-                            <div class="card-image">
-                                <img src="images/crystalcollector.png">
-
-                            </div>
-                            <div class="card-content">
-                                <p>Click the crystals, that each have a unique value, to add up your score to the given number without going over!</p>
-                            </div>
-                            <div class="card-action">
-                                <a href="https://ckontos.github.io/crystalcollectorgame/">Crystal Collector Game</a>
+                                </div>
+                                <div class="card-content">
+                                    <p>Your source for the latest Carolina Panthers news. View, save, and write notes on all on the latest panthers.com articles.</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="https://arcane-temple-16667.herokuapp.com/">Mongo News Scraper</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!----------------------------Connect div------------------------------->
+        <div class="row" id="connectWithMe">
+            <h2 class="divTitle">Connect With Me</h2>
 
-        <!----------------------------Apps div------------------------------->
+            <div class="col s12 m12 center-align">
+                <a target="_blank" href="https://github.com/ckontos"><img alt="Avatar" class="image" src="images/github-128.png" style="margin-right:50px"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/dimitri-kontos-7a7b73151/"><img src="images/linkedin-128.png" style="margin-right:50px"></a>
+                <a target="_blank" href="images/TechResume.pdf"><img src="images/resume.png" height="115" width="115"></a>
+            </div>
+
+        </div>
+        <!----------------------------Contact div------------------------------->
         <div class="row" id="contactMe">
             <h2 class="divTitle">Contact Me</h2>
 

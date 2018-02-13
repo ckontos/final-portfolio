@@ -13,19 +13,23 @@
 }
 
 #aboutMeDiv {
-    margin-bottom: 150px;
+    padding-bottom: 150px;
+    background: url("../images/subtle_white_feathers.png");
+    margin-bottom: 0;
+
 }
 
 .aboutMe {
     font-size: 18px;
 }
 
-#myWorkDiv {
+.myWorkDiv {
     padding-top: 10px;
     padding-bottom: 80px;
     background: #64b5f6;
     box-shadow: 0 22px 22px -22px rgba(0, 0, 0, 0.8) inset,
     0 -22px 22px -22px rgba(0, 0, 0, 0.8) inset;
+    margin-bottom: 0;
 
 }
 
@@ -42,6 +46,10 @@
 
 #contactMe {
     padding-bottom: 50px;
+    box-shadow: 0 22px 22px -22px rgba(0, 0, 0, 0.8) inset,
+    0 -22px 22px -22px rgba(0, 0, 0, 0.8) inset;
+    margin-bottom: 0;
+    background: url("../images/subtle_white_feathers.png");
 }
 
 #backToTop {
@@ -51,7 +59,7 @@
 #name:focus,
 #email:focus,
 #phone:focus,
-#textarea1:focus {
+#message:focus {
     border-bottom: 1px solid #64b5f6;
     -webkit-box-shadow: 0 1px 0 0 #64b5f6;
     -moz-box-shadow: 0 1px 0 0 #64b5f6;
@@ -86,4 +94,10 @@
     #aboutMeText {
         text-align: center;
     }
+}
+
+#connectWithMe {
+    padding-top: 100px;
+    padding-bottom: 140px;
+    margin-bottom: 0;
 }
