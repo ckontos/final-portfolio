@@ -7,9 +7,9 @@
     "dialect": "mysql"
   },
   "test": {
-    "username": process.env.dbUsername,
-    "password": process.env.dbPassword,
-    "database": process.env.dbDatabase,
+    "username": dbUsername,
+    "password": dbPassword,
+    "database": dbDatabase,
     "host": "er7lx9km02rjyf3n.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   },
