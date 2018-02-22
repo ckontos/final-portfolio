@@ -7,9 +7,9 @@
     "dialect": "mysql"
   },
   "test": {
-    "username": dbUsername,
-    "password": dbPassword,
-    "database": dbDatabase,
+    "username": "ueilb81piuee3ju8",
+    "password": "u2vkfghbwxl9irr5",
+    "database": portfolio,
     "host": "er7lx9km02rjyf3n.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   },
