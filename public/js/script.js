@@ -21,10 +21,10 @@ window.onload = function() {
             name: nameInput,
             email: emailInput,
             phone: phoneInput,
-            body: bodyInput
+            message: bodyInput
 
         }; // submit the new comment
-        // submitToApi(newMessage);
+        submitToApi(newMessage);
         submitMessage(newMessage);
 
         // empty out the input fields
@@ -35,12 +35,12 @@ window.onload = function() {
 
     }
 
-    // function submitToApi(message) {
-    //     console.log("about to send message");
-    //     $.post("/api/messages", message, function(err, data) {
-    //         console.log("message sent to api");
-    //     });
-    // }
+    function submitToApi(message) {
+        console.log("about to send message");
+        $.post("/api/messages", message, function(err, data) {
+            console.log("message sent to api");
+        });
+    }
 
 
     // Submits the message
