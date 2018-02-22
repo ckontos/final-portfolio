@@ -1,22 +1,22 @@
 {
   "development": {
-    "username": process.env.DBUSERNAME,
-    "password": process.env.DBPASSWORD,
-    "database": process.env.DBDATABASE,
+    "username": DBUSERNAME,
+    "password": DBPASSWORD,
+    "database": DBDATABASE,
     "host": "er7lx9km02rjyf3n.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   },
   "test": {
-    "username": process.env.DBUSERNAME,
-    "password": process.env.DBPASSWORD,
-    "database": process.env.DBDATABASE,
+    "username": DBUSERNAME,
+    "password": DBPASSWORD,
+    "database": DBDATABASE,
     "host": "er7lx9km02rjyf3n.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   },
   "production": {
-    "username": process.env.DBUSERNAME,
-    "password": process.env.DBPASSWORD,
-    "database": process.env.DBDATABASE,
+    "username": DBUSERNAME,
+    "password": DBPASSWORD,
+    "database": DBDATABASE,
     "host": "er7lx9km02rjyf3n.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   }
