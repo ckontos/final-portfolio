@@ -67,9 +67,10 @@
 }
 
 .brand-logo {
-    margin-left: 10px;
+    margin-left: 15px;
+    font-size: 24px;
     font-family: 'Playball', cursive;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Yellowtail', cursive;
 }
 
 .material-icons {
@@ -91,6 +92,8 @@
 .middle-indicator {
     position: absolute;
     top: 50%;
+    z-index: -1;
+    height: 75px;
 }
 
 .middle-indicator-text {
