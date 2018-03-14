@@ -7,7 +7,6 @@
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-
 #greeting {
     margin-top: 120px;
 }
@@ -24,13 +23,10 @@
 }
 
 .myWorkDiv {
-    padding-top: 10px;
-    padding-bottom: 80px;
+    padding-top: 50px;
+    padding-bottom: 120px;
     background: #64b5f6;
-    box-shadow: 0 22px 22px -22px rgba(0, 0, 0, 0.8) inset,
-    0 -22px 22px -22px rgba(0, 0, 0, 0.8) inset;
     margin-bottom: 0;
-
 }
 
 .divTitle {
@@ -76,24 +72,56 @@
     font-family: 'Titillium Web', sans-serif;
 }
 
-@media screen and (max-width: 1092px) {
-
-    #myImage {
-        margin-left: 80px;
-    }
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -moz-font-feature-settings: 'liga';
+    -moz-osx-font-smoothing: grayscale;
 }
 
-@media screen and (max-width: 992px) {
+.middle-indicator {
+    position: absolute;
+    top: 50%;
+}
 
-    #myImage {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
+.middle-indicator-text {
+    font-size: 4.2rem;
+}
 
-    #aboutMeText {
-        text-align: center;
-    }
+a.middle-indicator-text {
+    color: black !important;
+}
+
+.content-indicator {
+
+    width: 85px;
+    height: 85px;
+    background: none;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+
+.indicators {
+    visibility: hidden;
+}
+
+.card {
+    margin-top: 50px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.carousel-item {
+    background: url("../images/subtle_white_feathers.png");
 }
 
 #connectWithMe {
@@ -112,4 +140,96 @@
 .connectImage:hover {
     -webkit-transform: scale(1.25, 1.25);
     transform: scale(1.25, 1.25);
+}
+
+.carousel {
+    border-style: inset;
+    border-width: 3px;
+    border-color: black;
+}
+
+@keyframes appears {
+    0% {
+        opacity: 0;
+
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.animated {
+    animation: appears 2.5s
+}
+
+.img1 {
+    background-image: url("../images/coding1.jpg");
+}
+
+.img2 {
+    background-image: url("../images/coding2.jpg");
+}
+
+.img3 {
+    background-image: url("../images/coding3.jpeg");
+}
+
+.img1,
+.img2,
+.img3 {
+    height: 700px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* ========== MOBILE STYLING ========== */
+
+@media screen and (max-width: 1150px) {
+
+    .card {
+        margin-top: 30px;
+    }
+}
+
+
+@media screen and (max-width: 1092px) {
+
+    #myImage {
+        margin-left: 80px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .carousel {
+        height: 400px !important;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    #myImage {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #aboutMeText {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 812px) {
+
+    .carousel {
+        height: 430px !important;
+    }
+
+    .connectImage {
+        width: 70px;
+        height: 70px;
+    }
 }
