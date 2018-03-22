@@ -96,8 +96,17 @@
     height: 75px;
 }
 
+.movePrevCarousel {
+    transform: translate(20%, -50%);
+}
+
+.moveNextCarousel {
+    transform: translate(-20%, -50%);
+}
+
 .middle-indicator-text {
-    font-size: 4.2rem;
+    color: black !important;
+    font-size: 30px !important;
 }
 
 a.middle-indicator-text {
@@ -188,7 +197,6 @@ a.middle-indicator-text {
     background-size: cover;
 }
 
-
 /* ========== MOBILE STYLING ========== */
 
 @media screen and (max-width: 1150px) {
@@ -209,7 +217,7 @@ a.middle-indicator-text {
 @media screen and (max-width: 1024px) {
 
     .carousel {
-        height: 400px !important;
+        height: 420px !important;
     }
 }
 
@@ -229,11 +237,33 @@ a.middle-indicator-text {
 @media screen and (max-width: 812px) {
 
     .carousel {
-        height: 430px !important;
+        height: 480px !important;
     }
 
     .connectImage {
         width: 70px;
         height: 70px;
+    }
+
+    .img1,
+    .img2,
+    .img3 {
+        height: 550px;
+        background-attachment: scroll;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .carousel-fixed-item {
+        transform: translate(0%, 220%);
+    }
+
+    .movePrevCarousel {
+        transform: translate(160%, 0%);
+    }
+
+    .moveNextCarousel {
+        transform: translate(-160%, 0%);
     }
 }
