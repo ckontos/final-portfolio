@@ -237,7 +237,7 @@ a.middle-indicator-text {
 @media screen and (max-width: 812px) {
 
     .carousel {
-        height: 480px !important;
+        height: 450px !important;
     }
 
     .connectImage {
@@ -266,4 +266,14 @@ a.middle-indicator-text {
     .moveNextCarousel {
         transform: translate(-160%, 0%);
     }
+
+    .img3 {
+        background-image: url("../images/coding3-2.jpg");
+    }
+
+    .moveNextCarousel,
+    .movePrevCarousel {
+        visibility: hidden;
+    }
+
 }
