@@ -42,8 +42,6 @@
 
 #contactMe {
     padding-bottom: 50px;
-    box-shadow: 0 22px 22px -22px rgba(0, 0, 0, 0.8) inset,
-    0 -22px 22px -22px rgba(0, 0, 0, 0.8) inset;
     margin-bottom: 0;
     background: url("../images/subtle_white_feathers.png");
 }
@@ -140,6 +138,7 @@ a.middle-indicator-text {
     padding-top: 100px;
     padding-bottom: 140px;
     margin-bottom: 0;
+    background: white;
 }
 
 .connectImage {
@@ -183,13 +182,8 @@ a.middle-indicator-text {
     background-image: url("../images/coding2.jpg");
 }
 
-.img3 {
-    background-image: url("../images/coding3.jpeg");
-}
-
 .img1,
-.img2,
-.img3 {
+.img2 {
     height: 700px;
     background-attachment: fixed;
     background-position: center;
@@ -245,16 +239,6 @@ a.middle-indicator-text {
         height: 70px;
     }
 
-    .img1,
-    .img2,
-    .img3 {
-        height: 550px;
-        background-attachment: scroll;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
     .carousel-fixed-item {
         transform: translate(0%, 220%);
     }
@@ -267,13 +251,69 @@ a.middle-indicator-text {
         transform: translate(-160%, 0%);
     }
 
-    .img3 {
-        background-image: url("../images/coding3-2.jpg");
-    }
-
     .moveNextCarousel,
     .movePrevCarousel {
         visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
+    .img1,
+    .img2 {
+        height: 600px;
+        background-image: none;
+    }
+
+    .myWorkDiv {
+        height: 850px;
+    }
+
+    #myWorkTitle {
+        margin-top: 100px;
+    }
+
+    body:before {
+        content: "";
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -10;
+        background: url("../images/coding1.jpg") no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    body.secondBg:before {
+        content: "";
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -10;
+        background: url("../images/coding2.jpg") no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+    .brand-logo {
+        font-size: 26px !important;
+        margin-left: 0px
+    }
+
+    .connectImage {
+        width: 50px !important;
+        height: 50px !important;
     }
 
 }

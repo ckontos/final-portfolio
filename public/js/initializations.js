@@ -31,5 +31,32 @@ $(document).ready(function() {
             scrollTop: $($.attr(this, 'href')).offset().top
         }, 2500);
     });
+});
 
+var screenWidth = window.innerWidth;
+$(window).scroll(function() {
+
+    if (screenWidth <= 600 && screenWidth > 320) {
+
+        var fromTopPxFirstBgChange = 2295;
+        var scrolledFromTop = $(window).scrollTop();
+
+        if (scrolledFromTop > fromTopPxFirstBgChange) {
+            $('body').addClass('secondBg');
+        }
+        else {
+            $('body').removeClass('secondBg');
+        }
+    }
+    else if (screenWidth <= 320) {
+        var scrollBgChange = 2400;
+        var scrolledFromtop = $(window).scrollTop();
+
+        if (scrolledFromtop > scrollBgChange) {
+            $('body').addClass('secondBg');
+        }
+        else {
+            $('body').removeClass('secondBg');
+        }
+    }
 });
