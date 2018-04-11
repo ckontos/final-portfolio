@@ -1,39 +1,77 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    color: #4A4E69;
+}
+
+
+
+#nav-mobile {
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav ul a {
+    color: #4A4E69;
+}
+
+.brand-logo {
+    color: #4A4E69 !important;
+    margin-left: 15px;
+    font-size: 24px;
+    font-family: 'Yellowtail', cursive;
+}
+
+#slide-out li a {
+    color: #4A4E69 !important;
+}
+
+.button-collapse {
+    color: #4A4E69 !important;
+}
+
+.side-bar-background {
+    color: #4A4E69;
+    font-family: 'Yellowtail', cursive;
+    font-size: 52px;
+}
+
 #myImage {
-    margin-top: 120px;
-    margin-left: 120px;
-    height: 350px;
-    width: 300px;
+    margin-top: 75px;
+    height: 300px;
+    width: 250px;
     border-radius: 50%;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 8px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#greeting {
-    margin-top: 120px;
+#about-me-text {
+    background-color: #bdbdbd;
+    -webkit-clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+    clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+    padding: 65px 10px;
 }
 
-#aboutMeDiv {
-    padding-bottom: 150px;
-    background: url("../images/subtle_white_feathers.png");
-    margin-bottom: 0;
 
-}
-
-.aboutMe {
-    font-size: 18px;
-}
 
 .myWorkDiv {
     padding-top: 50px;
-    padding-bottom: 120px;
-    background: #64b5f6;
-    margin-bottom: 0;
+}
+
+#connectWithMe {
+    -webkit-clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+    clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+    padding: 50px 0px 80px 0px;
+    background-color: #bdbdbd;
 }
 
 .divTitle {
     text-align: center;
     padding-bottom: 15px;
     font-weight: bold;
-    font-family: 'Titillium Web', sans-serif;
 }
 
 #contactMe {
@@ -43,7 +81,6 @@
 #contactMe {
     padding-bottom: 50px;
     margin-bottom: 0;
-    background: url("../images/subtle_white_feathers.png");
 }
 
 #backToTop {
@@ -54,21 +91,25 @@
 #email:focus,
 #phone:focus,
 #message:focus {
-    border-bottom: 1px solid #64b5f6;
-    -webkit-box-shadow: 0 1px 0 0 #64b5f6;
-    -moz-box-shadow: 0 1px 0 0 #64b5f6;
-    box-shadow: 0 1px 0 0 #64b5f6;
+    border-bottom: 1px solid #4A4E69;
+    -webkit-box-shadow: 0 1px 0 0 #4A4E69;
+    -moz-box-shadow: 0 1px 0 0 #4A4E69;
+    box-shadow: 0 1px 0 0 #4A4E69;
+}
+
+#submitButton {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #4A4E69;
+}
+
+#submitButton:hover {
+    background-color: #4A4E69 !important;
+    color: white !important;
 }
 
 .active {
-    color: #64b5f6!important;
-}
-
-.brand-logo {
-    margin-left: 15px;
-    font-size: 24px;
-    font-family: 'Playball', cursive;
-    font-family: 'Yellowtail', cursive;
+    color: #4A4E69!important;
 }
 
 .material-icons {
@@ -112,7 +153,6 @@ a.middle-indicator-text {
 }
 
 .content-indicator {
-
     width: 85px;
     height: 85px;
     background: none;
@@ -127,17 +167,12 @@ a.middle-indicator-text {
 
 .card {
     margin-top: 80px;
-    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow: 0px 0px 30px -2px rgba(74, 78, 105, 1);
+    -moz-box-shadow: 0px 0px 30px -2px rgba(74, 78, 105, 1);
+    box-shadow: 0px 0px 30px -2px rgba(74, 78, 105, 1);
 }
 
 .carousel-item {
-    background: url("../images/subtle_white_feathers.png");
-}
-
-#connectWithMe {
-    padding-top: 100px;
-    padding-bottom: 140px;
-    margin-bottom: 0;
     background: white;
 }
 
@@ -154,9 +189,6 @@ a.middle-indicator-text {
 }
 
 .carousel {
-    border-style: inset;
-    border-width: 3px;
-    border-color: black;
     height: 600px !important;
 }
 
@@ -172,6 +204,58 @@ a.middle-indicator-text {
 
 .animated {
     animation: appears 2.5s
+}
+
+.tools-I-use {
+    background-color: #bdbdbd;
+    -webkit-clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+    clip-path: polygon(0 0%, 100% 4%, 100% 96%, 0% 100%);
+    padding: 50px 0px 80px 0px;
+}
+
+.tool-image-center {
+    Padding-left: 50px;
+    padding-right: 50px;
+}
+
+/* CSS FOR ANIMATED LETTERS */
+
+.ml11 {
+    font-weight: 900;
+    font-size: 3.5em;
+}
+
+.ml11 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+}
+
+.ml11 .line {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: #4A4E69;
+    transform-origin: 0 50%;
+}
+
+.ml11 .line1 {
+    top: 0;
+    left: 0;
+}
+
+.ml11 .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+.goodbye-animation {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 /* ========== MOBILE STYLING ========== */
@@ -254,6 +338,30 @@ a.middle-indicator-text {
     #myWorkTitle {
         margin-top: 100px;
     }
+
+    .tool-image-left {
+        width: 90px;
+    }
+
+    .tool-image-center {
+        width: 140px;
+        Padding-left: 40px;
+        padding-right: 40px;
+    }
+    .tool-image-right {
+        width: 90px;
+    }
+
+    .letters {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 360px) and (-webkit-min-device-pixel-ratio: 2) {
+    .letters {
+        font-size: 34px;
+    }
+
 }
 
 @media screen and (max-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -265,6 +373,23 @@ a.middle-indicator-text {
     .connectImage {
         width: 50px !important;
         height: 50px !important;
+    }
+
+    .tool-image-left {
+        width: 70px;
+    }
+
+    .tool-image-center {
+        width: 130px;
+        Padding-left: 40px;
+        padding-right: 40px;
+    }
+    .tool-image-right {
+        width: 70px;
+    }
+
+    .letters {
+        font-size: 31px;
     }
 
 }
